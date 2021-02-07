@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euf -o pipefail
 
 # create symlinks
 ln -sf $PWD/vimrc ~/.vimrc
