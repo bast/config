@@ -15,6 +15,10 @@ function ls
     exa $argv
 end
 
+function ll
+    ls -l --sort=modified --reverse
+end
+
 function cat
     bat -p $argv
 end
