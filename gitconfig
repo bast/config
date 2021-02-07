@@ -8,6 +8,7 @@
         su = submodule update --init --recursive
         st = status
         sw = switch
+        wdiff = diff --color-words
         graph = log --all --graph --decorate --oneline
         new = "!f() { git switch -c ${1} refs/remotes/origin/HEAD; }; f"
 [color]
