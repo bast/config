@@ -5,6 +5,9 @@ set -euf -o pipefail
 ln -sf $PWD/vimrc ~/.vimrc
 ln -sf $PWD/gitconfig ~/.gitconfig
 
+mkdir -p ~/.config/i3
+ln -sf $PWD/config/i3/config ~/.config/i3/config
+
 # install omf following https://github.com/oh-my-fish/oh-my-fish#installation
 install_file=$(mktemp)
 curl -L https://get.oh-my.fish > $install_file
