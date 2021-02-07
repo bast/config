@@ -72,14 +72,14 @@ function gitrename
 end
 
 function _perm
-    find . -type f -not -perm /111 | xargs chmod $argv[1]
-    find . -type f      -perm /111 | xargs chmod $argv[2]
-    find . -type d                 | xargs chmod $argv[2]
+    find . -type f -not -perm /111 -exec chmod $argv[1] {} \;
+    find . -type f      -perm /111 -exec chmod $argv[2] {} \;
+    find . -type d                 -exec chmod $argv[2] {} \;
 end
 
 function perm600
-    find . -type f | xargs chmod 600
-    find . -type d | xargs chmod 700
+    find . -type f -exec chmod 600 {} \;
+    find . -type d -exec chmod 700 {} \;
 end
 
 function perm700
