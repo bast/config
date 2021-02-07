@@ -1,0 +1,36 @@
+[user]
+        name = Radovan Bast
+        email = bast@users.noreply.github.com
+[credential]
+        helper = cache
+[alias]
+        cl = clone --recursive
+        su = submodule update --init --recursive
+        st = status
+        sw = switch
+        graph = log --all --graph --decorate --oneline
+        new = "!f() { git switch -c ${1} refs/remotes/origin/HEAD; }; f"
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[core]
+        editor = vim
+[apply]
+        whitespace = nowarn
+[mergetool]
+        keepBackup = false
+[difftool]
+        prompt = false
+[push]
+        default = simple
+[pull]
+        rebase = false
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[init]
+        defaultBranch = main
