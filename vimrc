@@ -2,6 +2,7 @@ execute pathogen#infect()
 
 set smartcase
 set ignorecase
+set nofoldenable
 
 " https://github.com/ntpeters/vim-better-whitespace
 highlight ExtraWhitespace ctermbg=blue
