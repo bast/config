@@ -7,6 +7,10 @@ set -x LANGUAGE en_US.UTF-8
 set -gx PATH $HOME/.cargo/bin $PATH
 set -gx PATH $HOME/bin $PATH
 
+# set -Ux PYENV_ROOT $HOME/.pyenv
+# set -Ux fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+# pyenv init - | source
+
 function vi
     vim $argv
 end
