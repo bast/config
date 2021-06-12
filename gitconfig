@@ -20,8 +20,13 @@
         editor = vim
 [apply]
         whitespace = nowarn
+[merge]
+        conflictstyle = diff3
+        tool = meld
 [mergetool]
         keepBackup = false
+[mergetool.meld]
+        useAutoMerge = true
 [difftool]
         prompt = false
 [push]
